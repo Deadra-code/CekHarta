@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
-  base: '/waris-tracker/', // Repo name for Github Pages
+  base: '/CekHarta/', // Repo name for Github Pages
   plugins: [
     react(),
     VitePWA({
