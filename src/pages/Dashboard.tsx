@@ -142,6 +142,11 @@ export default function Dashboard() {
             })}
           </div>
         </section>
+
+        <footer className="mt-12 mb-8 text-center pb-8">
+          <p className="font-label text-[10px] text-on-surface-variant opacity-50">Cek Harta &bull; Versi 1.1.0</p>
+          <p className="font-label text-[9px] text-on-surface-variant opacity-30 mt-1">Dibuat dengan ❤️ untuk Masa Depan</p>
+        </footer>
       </main>
 
       {/* Floating Action Button untuk menambah Aset */}

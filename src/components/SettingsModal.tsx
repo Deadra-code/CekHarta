@@ -221,6 +221,8 @@ export default function SettingsModal({ isOpen, onClose }: Props) {
             <span className="material-symbols-outlined text-[1.25rem]">delete_forever</span>
             <span className="font-body font-semibold text-xs">Reset Aplikasi (Hapus Semua)</span>
           </button>
+
+          <p className="text-center font-label text-[9px] text-on-surface-variant opacity-40 pt-4">Cek Harta v1.1.0</p>
         </div>
       </div>
     </div>
