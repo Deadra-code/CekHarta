@@ -1,73 +1,52 @@
-# React + TypeScript + Vite
+# 💎 Cek Harta
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Cek Harta** (Asset Tracker) adalah aplikasi manajemen aset pribadi yang modern, aman, dan offline-first. Dirancang untuk membantu Anda mencatat, melacak, dan mengamankan data aset berharga Anda dengan antarmuka yang premium dan elegan.
 
-Currently, two official plugins are available:
+## ✨ Fitur Unggulan
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **🔒 App Lock (PIN Security)**: Amankan data Anda dengan PIN 4 digit yang disimpan secara lokal. Aplikasi akan terkunci secara otomatis setiap kali dibuka kembali.
+- **🖼️ Document Viewer**: Pratinjau langsung untuk dokumen penting (PDF & Gambar) tanpa perlu mengunduh ke sistem file perangkat.
+- **🎨 Premium UI/UX**: Antarmuka modern dengan efek *glassmorphism*, tipografi elegan (Inter & Manrope), serta sistem dialog kustom yang mewah.
+- **📶 Offline First (PWA)**: Data Anda adalah milik Anda. Semua informasi disimpan secara lokal di perangkat menggunakan `IndexedDB` dan `localStorage`. Dapat diinstal sebagai aplikasi di HP atau laptop.
+- **📁 Manajemen Dokumen & Kontak**: Simpan salinan digital sertifikat dan kontak darurat (notaris, pengacara, dll) di satu tempat yang aman.
+- **📊 Dasbor Statistik**: Gambaran cepat nilai total aset dan aktivitas terbaru Anda.
 
-## React Compiler
+## 🚀 Teknologi
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend**: [React 18](https://reactjs.org/) + [TypeScript](https://www.typescriptlang.org/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **State Management**: [Zustand](https://github.com/pmndrs/zustand)
+- **Database Lokal**: [idb-keyval](https://github.com/jakearchibald/idb-keyval) (IndexedDB)
+- **Icons**: [Google Material Symbols](https://fonts.google.com/icons)
+- **Testing**: [Vitest](https://vitest.dev/) + [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-## Expanding the ESLint configuration
+## 🛠️ Pengembangan Lokal
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+1. **Clone repository**:
+   ```bash
+   git clone https://github.com/Deadra-code/CekHarta.git
+   cd CekHarta
+   ```
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+2. **Instal dependensi**:
+   ```bash
+   npm install
+   ```
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+3. **Jalankan server dev**:
+   ```bash
+   npm run dev
+   ```
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+4. **Jalankan pengujian**:
+   ```bash
+   npm run test:unit
+   ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🌐 Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Aplikasi ini dikonfigurasi untuk **Deployment Otomatis** ke GitHub Pages melalui GitHub Actions. Setiap perubahan yang di-push ke branch `main` akan memicu proses build dan sinkronisasi otomatis.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+Dikembangkan dengan ❤️ untuk keamanan aset berharga Anda.
