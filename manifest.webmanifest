@@ -1,1 +1,1 @@
-{"name":"Cek Harta","short_name":"Cek Harta","description":"Aplikasi pelacakan dan manajemen harta warisan.","start_url":"/","display":"standalone","background_color":"#f7fafc","theme_color":"#f7fafc","lang":"en","scope":"/"}
+{"name":"Cek Harta","short_name":"Cek Harta","description":"Aplikasi pelacakan dan manajemen harta warisan.","start_url":"/","display":"standalone","background_color":"#f7fafc","theme_color":"#f7fafc","lang":"en","scope":"/","icons":[{"src":"icon.png","sizes":"512x512","type":"image/png","purpose":"any maskable"}]}
