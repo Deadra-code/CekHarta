@@ -1,7 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import { describe, it, expect, vi } from 'vitest';
 import App from './App';
-import { useStore } from './store/useStore';
 
 vi.mock('./store/useStore', () => ({
   useStore: vi.fn(() => ({

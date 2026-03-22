@@ -8,8 +8,8 @@ vi.mock('../store/db', () => ({
 }));
 
 // Mock URL.createObjectURL and revokeObjectURL
-global.URL.createObjectURL = vi.fn(() => 'mock-url');
-global.URL.revokeObjectURL = vi.fn();
+(globalThis as any).URL.createObjectURL = vi.fn(() => 'mock-url');
+(globalThis as any).URL.revokeObjectURL = vi.fn();
 
 describe('DocumentViewer Component', () => {
   beforeEach(() => {
